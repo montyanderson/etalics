@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+
+	<title>etalics</title>
+
+	<meta charset="utf-8">
+
+	<link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+
+</head>
+<body>
+
+	<h1>etalics</h1>
+
+	<p>a generative real-time graphics library for artists</p>
+
+	<section>
+		<pre>
+etalics("#one",
+	(x, y, i) => [
+		Math.sin(x + y + i / 10),
+		Math.sin(x + y + i / 10),
+		Math.sin(x + y + i / 10)
+	]
+);
+		</pre>
+
+		<canvas id="one"></canvas>
+	</section>
+
+	<section>
+		<pre>
+etalics("#one",
+	(x, y, i) => [
+		Math.tan(x + y + i / 10),
+		Math.tan(x + y + i / 10),
+		Math.tan(x + y + i / 10)
+	]
+);
+		</pre>
+
+		<canvas id="two"></canvas>
+	</section>
+
+	<script src="etalics.js"></script>
+
+	<script>
+	etalics("#one",
+		(x, y, i) => [
+			Math.sin(x + y + i / 10),
+			Math.sin(x + y + i / 10),
+			Math.sin(x + y + i / 10)
+		]
+	);
+
+	etalics("#two",
+		(x, y, i) => [
+			Math.cos(x - y + i / 10),
+			Math.cos(x - y + i / 10),
+			Math.cos(x + y + i / 10)
+		]
+	);
+	</script>
+
+</body>
