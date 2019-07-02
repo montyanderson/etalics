@@ -44,6 +44,20 @@ etalics("#two",
 		<canvas id="two"></canvas>
 	</section>
 
+	<section>
+		<pre>
+etalics("#three",
+	(x, y, i) => [
+		Math.sin(Math.cosh(x + y + (24 - (i % 200)) / 10)),
+		Math.sin(Math.cosh(100 + x - y - (24 - (i % 200)) / 10)),
+		Math.sin(Math.cosh(x + y + (24 - (i % 200)) / 10))
+	]
+);
+		</pre>
+
+		<canvas id="three"></canvas>
+	</section>
+
 	<script src="etalics.js"></script>
 
 	<script>
@@ -60,6 +74,14 @@ etalics("#two",
 			Math.sin(x - y + i / 10),
 			Math.sin(x - y + i / 10),
 			Math.sin(x + y + i / 10)
+		]
+	);
+
+	etalics("#three",
+		(x, y, i) => [
+			Math.sin(Math.cosh(x + y + (24 - (i % 200)) / 10)),
+			Math.sin(Math.cosh(100 + x - y - (24 - (i % 200)) / 10)),
+			Math.sin(Math.cosh(x + y + (24 - (i % 200)) / 10))
 		]
 	);
 	</script>
