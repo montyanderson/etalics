@@ -59,7 +59,7 @@ function etalics(query, f) {
 
 	const ctx = $.getContext('2d');
 
-	let i = 0;
+	const i = Date.now();
 
 	function render() {
 		const imageData = ctx.createImageData(width, height);
@@ -85,9 +85,6 @@ function etalics(query, f) {
 		}
 
 		ctx.putImageData(imageData, 0, 0);
-
-		i++;
-
 		window.requestAnimationFrame(render);
 	}
 
