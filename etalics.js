@@ -59,9 +59,9 @@ function etalics(query, f) {
 
 	const ctx = $.getContext('2d');
 
-	const i = Date.now();
-
 	function render() {
+		const i = Date.now() / 1000 * 20;
+
 		const imageData = ctx.createImageData(width, height);
 
 		for(let x = 0; x < width; x++) {
