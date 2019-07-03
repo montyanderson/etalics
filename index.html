@@ -20,9 +20,9 @@
 		<pre>
 etalics("#one",
 	(x, y, i) => [
-		Math.sin(x + y + i / 10),
-		Math.sin(x + y + i / 10),
-		Math.sin(x + y + i / 10)
+		Math.sin(x + y + i / 15),
+		Math.sin(x + y + i / 15),
+		Math.sin(x + y + i / 15)
 	]
 );
 		</pre>
@@ -34,9 +34,9 @@ etalics("#one",
 		<pre>
 etalics("#two",
 	(x, y, i) => [
-		Math.sin(x - y + i / 10),
-		Math.sin(x - y + i / 10),
-		Math.sin(x + y + i / 10)
+		Math.sin(x - y + i / 15),
+		Math.sin(x - y + i / 15),
+		Math.sin(x + y + i / 15)
 	]
 );
 		</pre>
@@ -48,9 +48,9 @@ etalics("#two",
 		<pre>
 etalics("#three",
 	(x, y, i) => [
-		Math.sin(Math.cosh(x + y + (24 - (i % 200)) / 10)),
-		Math.sin(Math.cosh(100 + x - y - (24 - (i % 200)) / 10)),
-		Math.sin(Math.cosh(x + y + (24 - (i % 200)) / 10))
+		Math.sin(Math.cosh(x + y + (24 - (i % 200)) / 15)),
+		Math.sin(Math.cosh(100 + x - y - (24 - (i % 200)) / 15)),
+		Math.sin(Math.cosh(x + y + (24 - (i % 200)) / 15))
 	]
 );
 		</pre>
@@ -63,25 +63,25 @@ etalics("#three",
 	<script>
 	etalics("#one",
 		(x, y, i) => [
-			Math.sin(x + y + i / 10),
-			Math.sin(x + y + i / 10),
-			Math.sin(x + y + i / 10)
+			Math.sin(x + y + i / 15),
+			Math.sin(x + y + i / 15),
+			Math.sin(x + y + i / 15)
 		]
 	);
 
 	etalics("#two",
 		(x, y, i) => [
-			Math.sin(x - y + i / 10),
-			Math.sin(x - y + i / 10),
-			Math.sin(x + y + i / 10)
+			Math.sin(x - y + i / 15),
+			Math.sin(x - y + i / 15),
+			Math.sin(x + y + i / 15)
 		]
 	);
 
 	etalics("#three",
 		(x, y, i) => [
-			Math.sin(Math.cosh(x + y + (24 - (i % 200)) / 10)),
-			Math.sin(Math.cosh(100 + x - y - (24 - (i % 200)) / 10)),
-			Math.sin(Math.cosh(x + y + (24 - (i % 200)) / 10))
+			Math.sin(Math.cosh(x + y + (24 - (i % 200)) / 15)),
+			Math.sin(Math.cosh(x - y - (24 - (i % 200)) / 15)),
+			Math.sin(Math.cosh(x + y + (24 - (i % 200)) / 15))
 		]
 	);
 	</script>
